@@ -1,0 +1,90 @@
+###### PHP DATE QUERY ######
+
+$TdyDte  = date("Y-m-d");
+$Qry 		= " SELECT COUNT(1) AS CNT  , IS_ADMIN FROM tbl_orders ORD, tbl_users usr WHERE ORD.cust_id = usr.user_id AND UPPER(ORD.STATUS) = 'TXN_SUCCESS' 
+		                            AND '" .$TdyDte. "' BETWEEN DATE_FORMAT(DATE(ORD.`EFFECTIVE_FROM`), '%Y-%m-%d') 
+									AND DATE_FORMAT(DATE(ORD.`EFFECTIVE_TO`), '%Y-%m-%d') 
+		                            AND ORD.cust_id = '" .$userid. "'  limit 1 ";
+
+
+###### AJAX METHOD GET DATA FROM ARRAY VALUES AND DISPLAY  ######
+
+
+ $("#progress").css("display","block")
+             var testdata = {
+                 "username": $("#userName").val(),
+                 "password": $("#password").val(),
+                 "deviceId": "e32576e9caf5a135cc2fa029cd8535bae30f6bd58627ef584ba6422e2b6619f2",
+                 "deviceType": "iOS"
+             }
+
+             
+             if($("#userName").val() !="" && $("#password").val() != "")
+             {
+                // alert("Hello");
+                 $.ajax({
+                url: "http://www.meritcalls.com/merit/index.php?controller=api&action=checklogin",
+                type: "POST",
+                dataType: "json",
+                data: testdata, //JSON.stringify(testdata), 
+                //jsonpCallback:jsonp_callback,
+                //crossDomain: true,
+                //contentType: "application/json; charset=utf-8",
+                //dataType: "json",                
+                success: function (data) {
+                   //console.log(data); 
+                    if(data.statusCode == "SUCCESS"){
+                        setTimeout(function()
+                        {
+                            $("#progress").css("display","none");                    
+                            localStorage.setItem('Username', data.display_name);
+                            localStorage.setItem('userid', data.userid);
+                            sessionStorage.userid = data.userid;
+                         
+                             var  testdata1= {
+                                 "userid": data.userid,
+                                 "deviceId": "e32576e9caf5a135cc2fa029cd8535bae30f6bd58627ef584ba6422e2b6619f2",
+                                 "deviceType": "iOS"
+                             } 
+                                $.ajax({
+                                        url: "http://www.meritcalls.com/merit/index.php?controller=api&action=checkPremiumLogin",
+                                        type: "POST",
+                                        dataType: "json",
+                                        data: testdata1,              
+                                        success: function (data) {
+                                            localStorage.setItem('is_premium', data.userpremium);	
+                                            localStorage.setItem('IsAdminUser', data.IsAdminUser);	
+                                            
+                                              if(data.userpremium == 1 || data.IsAdminUser  == "Y"){
+                                
+                                                    window.location = "callsview.html";
+                    
+                                                }else{
+                                                    
+                                                    window.location = "getacesspage.html";
+                    
+                                                }
+                                            
+                                        }
+                                });
+                           
+                          
+                           
+                        },1000);
+                    }
+                    else if(data.statusCode == "INVALID_CREDENTIALS"){
+                        $("#progress").css("display","none");
+                        notification('Invalid username/Password');
+                    }
+                },
+                    
+                     error:function(data){
+                        console.log("Error Data == "+data);
+                    $("#progress").css("display","none")
+                    notification('Network connection failed');
+                }
+                });
+
+	return json_encode($plan_Arr); 
+	
+###### AJAX METHOD GET DATA FROM ARRAY VALUES AND DISPLAY  ######

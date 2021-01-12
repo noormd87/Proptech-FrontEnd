@@ -1,0 +1,274 @@
+<!--<div class="globe-panel">-->
+
+            <!--    <div class="g-mask">-->
+
+            <!--        <p>Search for Global Residential Data</p>-->
+
+            <!--        <a href="<?php // SITE_BASE_URL;?>dashboard/GlobalLocation.html" class="btn btn-orange">Countinue</a>-->
+
+            <!--    </div>-->
+
+            <!--    <div class="d-flex">-->
+
+            <!--        <img src="assets/images/globe.png" class="img-fluid globe-img" alt="">-->
+
+            <!--        <div class="comming-countries">-->
+
+            <!--            <h6>Comming Soon</h6>-->
+
+            <!--            <div class="country">-->
+
+            <!--                <img src="assets/images/usa.png" alt="">-->
+
+            <!--                <span>USA</span>-->
+
+            <!--            </div>-->
+
+            <!--            <div class="country">-->
+
+            <!--                <img src="assets/images/singapor.png" alt="">-->
+
+            <!--                <span>Singapore</span>-->
+
+            <!--            </div>-->
+
+            <!--            <div class="country">-->
+
+            <!--                <img src="assets/images/malaysia.png" alt="">-->
+
+            <!--                <span>Malaysia</span>-->
+
+            <!--            </div>-->
+
+            <!--        </div>-->
+
+            <!--    </div>-->
+
+            <!--    <div class="row mt-3 no-gutters">-->
+
+            <!--        <div class="col-4 text-center">-->
+
+            <!--            <a class="nav-link" href="<?php // echo SITE_BASE_URL;?>Property/PropertyInvestar.html?country=3">-->
+
+            <!--                <img src="<?php // SITE_BASE_URL;?>assets/img/uk.png" class="img-fluid" alt="" width="100px">-->
+
+            <!--                <span>United Kingdom</span>-->
+
+            <!--            </a>-->
+
+            <!--        </div>-->
+
+            <!--        <div class="col-4 text-center">-->
+
+            <!--            <a class="nav-link" href="<?php // echo SITE_BASE_URL;?>Property/PropertyInvestar.html?country=2">-->
+
+            <!--                <img src="<?php // SITE_BASE_URL;?>assets/img/australia.png" class="img-fluid" alt="" width="100px">-->
+
+            <!--                <span>Australia</span>-->
+
+            <!--            </a>-->
+
+            <!--        </div>-->
+
+            <!--        <div class="col-4 text-center">-->
+
+            <!--            <a class="nav-link" href="<?php // echo SITE_BASE_URL;?>Property/PropertyInvestar.html?country=1">-->
+
+            <!--                <img src="<?php //SITE_BASE_URL;?>assets/img/newzealand.png" class="img-fluid" alt="" width="100px">-->
+
+            <!--                <span>New Zealand</span>-->
+
+            <!--            </a>-->
+
+            <!--        </div>-->
+
+            <!--    </div>-->
+
+            <!--</div>-->
+
+
+<div class="analyze-panel">
+
+                <div class="input-group mb-3">
+
+                    <input type="text" class="form-control" placeholder="Property">
+
+                    <div class="input-group-append">
+
+                        <a href="<?= SITE_BASE_URL;?>Portfolio/ProtfolioPropDetails.html?IsProtFolio=Y"><button class="btn" type="submit"><i class="fas fa-plus"></i> ADD</button></a>
+
+                    </div>
+
+                </div>
+
+                <div class="form-check-inline">
+
+                    <label class="form-check-label">
+
+                        <input type="radio" checked class="form-check-input div_compare" name="optradio" value="compare"> Compare
+
+                    </label>
+
+                </div>
+
+                <div class="form-check-inline">
+
+                    <label class="form-check-label">
+
+                        <input type="radio" class="form-check-input div_compare" name="optradio" value="analyze"> Analyze
+
+                    </label>
+
+                </div>
+
+                <div class="compare_div">
+
+                    <form action="<?= SITE_BASE_URL;?>Portfolio/Portfolio.html?ViewCompare=R&IsEligible=Y&compareVal=Y" method="post">
+
+                        <div class="filter-checks">
+
+                            <?php
+
+                            \Property\PropertyClass::Init();
+
+                            $PropertyComparison = \Property\PropertyClass::GetPropertyComparison("","","","","R");
+
+                            $J = 1;
+
+                            $PrevCountryId ="";
+
+                            $IsSameCountry = "Y";
+
+                            // echo "<pre>";
+
+                            foreach($PropertyComparison as $PropCmp)
+
+                            {
+
+                                // print_r($PropCmp);
+
+                                $autoid         = $PropCmp["autoid"]            ? $PropCmp["autoid"] : "" ;
+
+                                $CountryId      = $PropCmp["country_id"]        ? $PropCmp["country_id"] : "" ;
+
+                                $propertyid     = $PropCmp["property_id"]       ? $PropCmp["property_id"] : "" ;
+
+                                $propertyname   = $PropCmp["property_name"]     ? $PropCmp["property_name"] : "" ;
+
+                                ?>
+
+                                <div class="form-check">
+
+                                    <label class="form-check-label">
+
+                                        <input type="checkbox" class="form-check-input" name="MultiPropertyVal[]" id="propID" value="<?= $autoid;?>"> <?= $propertyname; ?>
+
+                                    </label>
+
+                                </div>
+
+                                <?php
+
+                            }
+
+                            ?>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-green">Compare Property</button>
+
+                    </form>
+
+                </div>
+
+                <div class="analyze_div" style="display:none">
+
+                    <form action="<?= SITE_BASE_URL;?>Property/PropertyFullDtl.html" method="get">
+
+                    <div class="filter-checks">
+
+                        <?php
+
+                        \Property\PropertyClass::Init();
+
+                        $rows = \Property\PropertyClass::GetPropertyComparison("","","","","");
+
+                        $i=1;
+
+                        $TotalPropertyValue = 0;
+
+                        $Totalrentperweek  = 0;
+
+                        $TotalYieldroi  = 0;
+
+                        $Totalportfoliogrowth = 0;
+
+                        $TotalGrossIncome = 0;
+
+                        $Totalweeklyrental = 0;
+
+                        $TotalNetAnnualReturn = 0;
+
+                        $PropReached = 1;
+
+                        $TotalNetCashFlow = 0;
+
+                        $TotalYieldroi = 0;
+
+                        $TotalOperatigExpTotal = 0;
+
+                        foreach ($rows as $row) 
+
+                        {
+
+                            $autoid         = $row["autoid"];
+
+                            $ProprtyId      = $row["propertyid"];
+
+                            $autoid         = $row["autoid"];
+
+                            $Countryname    = $row["country_name"];
+
+                            $countryid      = $row["country_id"];
+
+                            $Propertyname   = $row["property_name"];
+
+                           
+
+                            ?>
+
+                            <div class="form-check">
+
+                                <label class="form-check-label">
+
+                                    <input type="radio" class="form-check-input" name="id" id="propID<?= $row['autoid'];?>" value="<?= $ProprtyId;?>"> <?= $Propertyname; ?>
+
+                                </label>
+
+                            </div>
+
+                            <?php 
+
+                            if ($i > 3)
+
+                            {
+
+                                $PropReached = 0; 
+
+                            }
+
+                            $i++;
+
+                        }
+
+                        ?>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-green">Analyse Property</button>
+
+                </form>
+
+                </div>
+
+            </div>

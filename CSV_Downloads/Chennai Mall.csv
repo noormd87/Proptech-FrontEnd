@@ -1,0 +1,16 @@
+#,Building,"APT No",Level,Aspect,Floorplan,"APT Size(approx BOMA m2 ft2)","Approx Patio Balcony(m2 ft2)","Car park",Bed,Bath,"Price GST Incl",status
+1,"West Building",2,C,500,220,0,3,0,0,1,520000,AVAILABLE
+2,"North Building",1,A,550,230,0,3,0,0,2,550000,AVAILABLE
+3,"East Building",3,B,600,235,0,3,0,0,1,550000,AVAILABLE
+4,"South Building",5,C,450,215,0,2,0,0,1,560000,AVAILABLE
+5,"West Building",7,A,500,200,0,3,0,0,1,565000,AVAILABLE
+6,"West Building",6,B,650,250,0,3,0,0,2,565000,AVAILABLE
+7,"West Building",4,C,500,220,0,3,0,0,1,650000,AVAILABLE
+8,"North Building",53,A,550,220,0,2,0,0,1,650000,AVAILABLE
+9,"East Building",45,B,600,230,0,3,0,0,1,681000,AVAILABLE
+10,"South Building",3,C,500,235,0,3,0,0,2,681000,AVAILABLE
+11,"West Building",2,A,550,220,0,3,0,0,1,681000,AVAILABLE
+12,"North Building",7,B,600,230,0,3,0,0,1,681000,AVAILABLE
+13,"East Building",8,C,450,235,0,3,0,0,2,681000,AVAILABLE
+14,"South Building",12,A,500,220,0,3,0,0,1,681000,AVAILABLE
+15,"West Building",4,B,650,230,0,2,0,0,1,681000,AVAILABLE

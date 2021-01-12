@@ -1,0 +1,2 @@
+[15-Jan-2020 11:41:20 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home/duvalknowledge/public_html/dpo/uploads/myfolder/create (7).php on line 10
+[28-Jan-2020 11:32:04 America/Chicago] PHP Fatal error:  Class 'Html\HtmlClass' not found in /home/duvalknowledge/public_html/dpo/uploads/myfolder/index.php on line 2

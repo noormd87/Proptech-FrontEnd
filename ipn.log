@@ -1,0 +1,183 @@
+[2020-11-19 03:46 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Paypal-Debug-Id: 5b3df4a96f5d5
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=_cCN69A_QNxknXt0Fql2wJEfSQ3igpvxJFddb7M1TtjENLhvIvDEsERMgZ4rKWpF4mry5vyyrsSaeTx8w6rYJE-RnvsKu_TpYVc9hLGyo-P7qTvHCGPZRbD37RBXOTInEO6GlI8nwtR-HOTgPIrYGCTyihgtlOM2Hwx6T1IWA4dpRg-QZYIuqVgz6v_FaGBVf4CSwhwkKKS1dCv1fuUaAfgzJK6Zqkk3ZWjY0igFQ2UN3v5aGB5OGOPuZXKofqfhPJ73MDRfjQCv6qG2HvqCMD2X-s6ANW1urNRHBZ2xNAADIbbhakw38ckBqXc7wGKMyrnTqr_t81PHbtJjoSsb-qYRTEHJD8a_DZKwfmRAxdUltueXpmop0aanh-IotnAsZj1H03W0B83DY7C90iXOwKhmNoYwnPFWGPxNlZn4IUoXaxAulX9xRzfh21S; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 17-Nov-2030 09:46:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 19-Nov-2022 09:46:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: l7_az=dcg13.slc; Path=/; Domain=paypal.com; Expires=Thu, 19 Nov 2020 10:16:00 GMT; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1700387159%26vteXpYrS%3D1605780959%26vr%3Ddfe5796e1750a275919ced83ffb20298%26vt%3Ddfe5796e1750a275919ced83ffb20297%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:00 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3Ddfe5796e1750a275919ced83ffb20298%26vt%3Ddfe5796e1750a275919ced83ffb20297; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:00 GMT; Secure
+X-Frame-Options: SAMEORIGIN
+DC: phx-origin-www-2.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Thu, 19 Nov 2020 09:46:00 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-sjc10034-SJC, cache-bur17534-BUR
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1605779159.386266,VS0,VE1041
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:BUR; Domain=paypal.com; Path=/; Secure
+
+INVALID
+[2020-11-19 03:46 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Paypal-Debug-Id: 371a9e9b7415
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=CM8MxgHPcri4v23Hm9A6ieE-2p04f9DQE6ynjcUd6Zfq6nT0fgJZq43QIHJgam3GYUJLhb_rlHNcd57Guaoh4kQsqLIIfM5Gi_gvH2GXll0QlPqfFG1Ydcu9EIejlQSyskHkuAa7t9SOJTpflPENVY5Vt_e0i_8yAfHJcmBE6bxPv4hHVkncvVjpfQqxkUkaslmlGocXaXQmUMAX9_tEUJ-ybarwfpYJ86R13cjjWCBvQPjUM-Vwt-DLhc0K06QhcrPyHSz7-MIxXYs2SIRy-INzXwTeinyrcgz9EkfowZn22LMMSOjf2ASTN9TNZz_WEbX3iRET8UHIU0m0bO-L9OK-XKBgGQIwQHGc-NGbE0Nh_8ePgcN3i-SLZoOZVOjL0SVLl8aArO57N5ZBaAlTUEGHy_KRFCC9PEdSxyZlU3hVRpBbR7Hf9D3nZbi; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 17-Nov-2030 09:46:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 19-Nov-2022 09:46:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: l7_az=dcg02.phx; Path=/; Domain=paypal.com; Expires=Thu, 19 Nov 2020 10:16:12 GMT; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1700387171%26vteXpYrS%3D1605780971%26vr%3Ddfe5a7331750a7886e8bbbf1ffa28894%26vt%3Ddfe5a7331750a7886e8bbbf1ffa28893%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:12 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3Ddfe5a7331750a7886e8bbbf1ffa28894%26vt%3Ddfe5a7331750a7886e8bbbf1ffa28893; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:12 GMT; Secure
+X-Frame-Options: SAMEORIGIN
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Thu, 19 Nov 2020 09:46:12 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-sjc10033-SJC, cache-bur17548-BUR
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1605779171.104040,VS0,VE930
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:BUR; Domain=paypal.com; Path=/; Secure
+
+INVALID
+[2020-11-19 03:46 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Paypal-Debug-Id: 2a1b4091847b0
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=TwUZm28eIzeeUvQLHy_3_gXgGGip6gEkX4AcLudUERef5goZyfVsNfHxRdm-jQSuyvj9dHfIKCerHsnOvFdTzs_e72dfl4frQSuwgQEco4yIcnuMmiNyMRdDPBIgnwbUDLtR4DE_k_aNEDvmRqhLBluG7d7KurpTImryLydMQr6zLebRsW2jjr8TKLGlimdU5DKKXw5P73RyIcq2JMYWJLoD1R7pf96Wm_Mnsq3aTWMK_2t4TR9i1Ulb2_3zp7Dx6aOuDxGkg8Fqb3o2kMZRPzmexmje2nDo_No4hZdaMG4-zyp-Af7dgldFzFIxyQG3oX8F_8leBZg6EvNy8JTsMvJKLnq7hdImjwGo17i7m9cUhUM27zoDODJMKWD77Rzb1ExA5ienKcweJw70NjNxcTlJF7iqruRs2QC08WTqouK0bE9p67fVj3ACqoq; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 17-Nov-2030 09:46:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 19-Nov-2022 09:46:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: l7_az=dcg15.slc; Path=/; Domain=paypal.com; Expires=Thu, 19 Nov 2020 10:16:22 GMT; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1700387181%26vteXpYrS%3D1605780981%26vr%3Ddfe5d1611750a1d57a5e7c16ffb38b80%26vt%3Ddfe5d1611750a1d57a5e7c16ffb38b7f%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:22 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3Ddfe5d1611750a1d57a5e7c16ffb38b80%26vt%3Ddfe5d1611750a1d57a5e7c16ffb38b7f; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:22 GMT; Secure
+X-Frame-Options: SAMEORIGIN
+DC: phx-origin-www-2.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Thu, 19 Nov 2020 09:46:22 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-sjc10044-SJC, cache-bur17540-BUR
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1605779182.900755,VS0,VE676
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:BUR; Domain=paypal.com; Path=/; Secure
+
+INVALID
+[2020-11-19 03:46 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2020-11-19 03:46 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Paypal-Debug-Id: bbf318f22c805
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=Mdvs-Z_aTEvQJmYF23nzjO4d73JETNCwj17O9QIZQZRjJFITvsBn4Y_1R_jsq9DYm5LAOc3KCs-fTt55KiWCYoxca-3TAAQ-aI31j6t0CdNYd9BXN1SKy2848Yr8Ls_oIRWcCcaylLJBsIg0pEuICOr2kjdZtsQPdf0OuIyt_lXz5_RYfKoRHnwp1OjedH6tyFXB2VmieFfKsj4rL3K_nYm6aqrmGKXkBmjAVYR92_0G3KkAJv2c66_aXCr6fHW7DKDxbuYW2uXwfGUD5yND7f0JG-1g_4Vl3jBOCH4lPryoNRDs3UfuiY4jztvIpucps8ry2thpEpiqlZzgNuLsz0XlUJClvHj81SM6BojzXkTbDUtPyFiuLQM-gvC1TssrpoECcj3YlT5s1rLF6o42PTiAeYjGV6tWfEF3AIzD1sNfHzgvqxloY04_XBG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 17-Nov-2030 09:46:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 19-Nov-2022 09:46:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: l7_az=dcg15.slc; Path=/; Domain=paypal.com; Expires=Thu, 19 Nov 2020 10:16:44 GMT; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1700387203%26vteXpYrS%3D1605781003%26vr%3Ddfe626af1750ad0058afca3dffa66c97%26vt%3Ddfe626af1750ad0058afca3dffa66c96%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:44 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3Ddfe626af1750ad0058afca3dffa66c97%26vt%3Ddfe626af1750ad0058afca3dffa66c96; Path=/; Domain=paypal.com; Expires=Sun, 19 Nov 2023 09:46:44 GMT; Secure
+X-Frame-Options: SAMEORIGIN
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Thu, 19 Nov 2020 09:46:44 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-sjc10022-SJC, cache-bur17527-BUR
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1605779204.741441,VS0,VE770
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:BUR; Domain=paypal.com; Path=/; Secure
+
+INVALID
+[2020-11-19 03:46 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2020-11-25 08:32 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1095
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=2000.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=FLFPRGBWRPNWN&address_street=1+Main+St&payment_date=00%3A32%3A12+Nov+25%2C+2020+PST&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=58.30&address_country_code=US&address_name=John+Doe%27s+Test+Store&notify_version=3.9&custom=&payer_status=verified&business=troy%40duvalproptech.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=An7H3kH8.DY56ocyWs9pEuVQUM5wAYmFTHuxYsw0AywhLp.aRjINg42W&payer_email=sb-kuc493742534%40business.example.com&txn_id=5CH08770CA6446641&payment_type=instant&payer_business_name=John+Doe%27s+Test+Store&last_name=Doe&address_state=CA&receiver_email=troy%40duvalproptech.com&payment_fee=58.30&shipping_discount=0.00&insurance_amount=0.00&receiver_id=P4ERLMMD25JXE&txn_type=web_accept&item_name=Project+ID+50%2C+Property+ID+499&discount=0.00&mc_currency=USD&item_number=5fbe165456962&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=2000.00&ipn_track_id=4ae56b1e8b776
+[2020-11-25 08:32 UTC] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Paypal-Debug-Id: 9eae1cfd3fbde
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=VBLO-hB1_o5idWRl5lFvcFJdJdkEoZizW0k29qVCBfebB_Zy75Cr4Gi9zdK5_8TZeMzfXZmFQm_cvOhSj5x_ut2zGj1nUHqoiU_huxlo6a-TdotrOHjx334hyttw36wPgYdjgQpKkiFtbGb7j4LSlOPEW_l-CB5z3PHyRBoq9SCAntDVUq5igQZLW-4M1Nv0LzrXB6lMvbRvs-KpFrQPvDPOun1sAsoqqpHz0FkJZ7SqQy8Yt2NOc4lp9_yy_u-j0f-njJsQ0g97bAEHtFOcuBM6XjMkXegfNhaQZCRACUzMlIWpAuPQbQoMvmcphWgwuqgDywcEmtpLjD6ujeB5C1yribdiPPOEnV-aNRbKsRsYfascgMTPbhgKSO6ynz0A5Z5ff1_YrnihvJin1L0usw-2kGU2zrMQh9Iz87ps7alW8lBiXXitfROXi30; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 23-Nov-2030 08:32:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 25-Nov-2022 08:32:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: l7_az=dcg01.phx; Path=/; Domain=paypal.com; Expires=Wed, 25 Nov 2020 09:02:28 GMT; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1700901147%26vteXpYrS%3D1606294947%26vr%3Dfe884f3b1750ad045d50e13efdda9c94%26vt%3Dfe884f3b1750ad045d50e13efdda9c93%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sat, 25 Nov 2023 08:32:28 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3Dfe884f3b1750ad045d50e13efdda9c94%26vt%3Dfe884f3b1750ad045d50e13efdda9c93; Path=/; Domain=paypal.com; Expires=Sat, 25 Nov 2023 08:32:28 GMT; Secure
+X-Frame-Options: SAMEORIGIN
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Wed, 25 Nov 2020 08:32:28 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-dfw18659-DFW, cache-bwi5078-BWI
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1606293147.386222,VS0,VE1096
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:BWI; Domain=paypal.com; Path=/; Secure
+
+INVALID
+[2020-11-25 08:32 UTC] Invalid IPN: cmd=_notify-validate&mc_gross=2000.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=FLFPRGBWRPNWN&address_street=1+Main+St&payment_date=00%3A32%3A12+Nov+25%2C+2020+PST&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=58.30&address_country_code=US&address_name=John+Doe%27s+Test+Store&notify_version=3.9&custom=&payer_status=verified&business=troy%40duvalproptech.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=An7H3kH8.DY56ocyWs9pEuVQUM5wAYmFTHuxYsw0AywhLp.aRjINg42W&payer_email=sb-kuc493742534%40business.example.com&txn_id=5CH08770CA6446641&payment_type=instant&payer_business_name=John+Doe%27s+Test+Store&last_name=Doe&address_state=CA&receiver_email=troy%40duvalproptech.com&payment_fee=58.30&shipping_discount=0.00&insurance_amount=0.00&receiver_id=P4ERLMMD25JXE&txn_type=web_accept&item_name=Project+ID+50%2C+Property+ID+499&discount=0.00&mc_currency=USD&item_number=5fbe165456962&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=2000.00&ipn_track_id=4ae56b1e8b776

@@ -1,0 +1,48 @@
+*{
+    font-family: regular;
+    font-weight: 300;
+}
+
+html{
+    overflow-x: hidden;
+}
+body
+{
+    background-color: #ebe8e8;
+}
+
+@import 'variables.scss';
+
+@import 'fonts.scss';
+
+// reset CSS
+
+.main-flex
+{
+    display: flex;
+    .right-wrapper
+    {
+        flex-grow: 1;
+    }
+}
+
+.btn-default
+{
+    background-color: $orange;
+    color:#fff;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: medium;
+    padding:10px 10px;
+    &:hover
+    {
+        background-color:$dark;
+        color:$orange;
+    }
+}
+
+@import 'sidebar.scss';
+
+@import 'topbar.scss';
+
+@import 'inner-content.scss';

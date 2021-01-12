@@ -1,0 +1,321 @@
+body{
+	font-family: "Poppins", sans-serif;
+	color: #0E1127;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: .14px;
+}
+.text-sm{
+	font-size: 10px;
+	letter-spacing: .01px;
+	line-height: 16px;
+}
+.error{
+	font-size: 8px;
+	line-height: 12px;
+	letter-spacing: .08px;
+}
+.error-success{
+	color: #79AA1C;
+}
+.error-danger{
+	color: #C70000;
+}
+.login-form .steps{
+	padding: 30px 0px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 0.20000000298023224px solid #707070;
+	border-radius: 22px;
+	margin-bottom: 40px;
+}
+.login-form.wizard > .steps a, .login-form.wizard > .steps a:hover, .login-form.wizard > .steps a:active {
+    font-size: 14px;
+	letter-spacing: .14px;
+    display: block;
+    width: auto;
+    margin: 0 0.5em 0.5em;
+    text-decoration: none;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    padding: 10px 15px;
+}
+
+.login-form.wizard a, .tabcontrol a {
+    border: 0.25px solid #0DB7E0;
+    color: #0E1127;
+    background-color: #fff;
+}
+
+.login-form.wizard > .steps .disabled a, .login-form.wizard > .steps .disabled a:hover, .login-form.wizard > .steps .disabled a:active {
+    border: 0.25px solid #0DB7E0;
+    color: #0E1127;
+    background-color: #fff;
+}
+
+.login-form.wizard > .steps .current a, .login-form.wizard > .steps .current a:hover, .login-form.wizard > .steps .current a:active {
+    background: #0DB7E0 0% 0% no-repeat padding-box;
+    color: #fff;
+	border: 0.25px solid #0DB7E0;
+	border-radius: 19px;
+    cursor: pointer;
+}
+
+.login-form.wizard > .content > .body label {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+
+.form-inner h2, .heading1{
+	font-size: 29px;
+	letter-spacing: .29px;
+	font-weight: 400;
+	color: #012145;
+}
+.heading4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #012145;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.form-inner p{
+
+}
+.form-inner label{
+	font-size: 16px;
+	letter-spacing: 25px;
+	letter-spacing: .16px;
+	font-weight: 400;
+}
+.login-form .form-control{
+	font-size: 10px;
+	line-height: 16px;
+	color: #818181;
+	letter-spacing: .1px;
+	font-weight: 300;
+	border: none;
+	border-bottom: .25px solid #EAEAEA;
+	border-radius: 0px;
+	padding-left: 0;
+	padding-right: 0;
+	background: transparent;
+	background-color: transparent !important;
+	box-shadow: none;
+}
+.login-form .form-control:focus, .login-form .form-control:active{
+	background-color: transparent;
+}
+.login-form select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+
+.login-form .form-control:focus{
+	box-shadow: none;
+}
+
+
+::-webkit-input-placeholder {
+ color: #818181 !important;
+ font-family: "Poppins", sans-serif;
+}
+
+::-moz-placeholder { /* Firefox 18- */
+ color: #818181 !important; 
+ font-family: "Poppins", sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #818181 !important; 
+ font-family: "Poppins", sans-serif;
+}
+
+:-ms-input-placeholder {  
+ color: #818181 !important;
+ font-family: "Poppins", sans-serif;
+}
+
+.seprator{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: .25px solid #707070;
+}
+.relative{
+	position: relative;
+}
+.v-align-middle{
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	margin-top: 50px;
+}
+.btn-login{
+	box-shadow: 0px 2px 6px #00000029;
+	border: 1px solid #4267B2;
+	border-radius: 4px;
+	padding: 35px;
+	position: relative;
+}
+.fb-login{
+	background: #4267B2 0% 0% no-repeat padding-box;
+	color: #fff;
+}
+.google-login{
+	background: #4285F4 0% 0% no-repeat padding-box;
+	color: #fff;
+}
+.email-login{
+	background: #FAFAFA 0% 0% no-repeat padding-box;
+	color: #0E1127;
+}
+.btn-login img{
+	position: absolute;
+	left: 15px;
+	top: 30px;
+}
+.btn-login-group{
+	max-width: 80%;
+}
+
+.main-wrapper{
+	height: 100vh;
+	position: relative;
+}
+.main-wrapper .container{
+	position: relative;
+}
+
+.main-wrapper .wizard > .content{
+
+}
+
+.payment-via {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+}
+
+.payment-via img{
+	width: 155px;
+}
+.add-card-div {
+    display: inline-block;
+    padding: 30px 0;
+}
+.add-card-div img{
+	max-width: 250px;
+}
+.add-card-btn {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none !important;
+    outline: none !important;
+}
+.add-card-btn i{
+	font-size: 20px;
+	color: #0DB7E0;
+}
+.add-card-btn:hover, .add-card-btn:focus{
+	text-decoration: none;
+	color: #0DB7E0;
+}
+.cc-deatils {
+	background: #FAFAFA 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #00000029;
+	border-radius: 4px;
+	padding: 15px;
+}
+.pull-right-checkbox {
+    position: absolute;
+    right: 20px;
+    top: 38%;
+}
+.align-baseline-end{
+	transform: translate(0, 46%);
+}
+
+
+.steps ul{
+	position: relativel
+}
+.steps ul:before {
+    content: '';
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0000002F;
+    border-radius: 5px;
+    height: 10px;
+    width: 65%;
+    position: absolute;
+    top: 43%;
+    z-index: 0;
+}
+.form-inputs .btn{
+	min-height: 50px;
+}
+.form-inner{
+	min-height: 650px;
+	height: 80vh;
+}
+.form-inputs {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    background: #F8F8F8;
+    padding: 40px 20px;
+    max-width: 400px;
+    margin-top: 30px;
+}
+.forgot-link{
+	text-align: right;
+	padding-top: 5px;
+}
+.forgot-link a{
+	font-size: 9px;
+	line-height: 16px;
+	color: #7B7B7B;
+}
+.tc{
+	padding-top:15px;font-size: 10px;line-height: 16px;color: #000;font-weight: 400;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: .25px solid #EAEAEA;
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 0px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+@media only screen and (min-width: 1440px) {
+	.v-align-middle{
+  		margin-top: 0px;
+	}	
+	.container{
+		max-width: 1280px;
+	}
+	.main-wrapper .wizard > .content{
+	    position: absolute;
+	    width: 100%;
+	    top: 50%;
+	    transform: translate(0%, -40%);
+}
+
+
+@media only screen and (min-width: 1680px) {
+	.v-align-middle{
+  		margin-top: 0px;
+	}	
+	.container{
+		max-width: 1366px;
+	}
+}
+
+
